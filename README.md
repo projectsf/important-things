@@ -37,8 +37,9 @@ $ npm install -g grunt-cli
   Install MEAN CLI:
 
     $ [sudo] npm install -g meanio@latest
-    $ mean init <myApp>
-    $ cd <myApp> && npm install
+    $ mean init important-things
+    $ cd important-things && npm install
+    $ bower install angular-google-maps
 
   We recommend using [Grunt](https://github.com/gruntjs/grunt-cli) to start the server:
 

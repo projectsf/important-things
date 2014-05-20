@@ -16,7 +16,10 @@
             "public/system/lib/angular-bootstrap/ui-bootstrap-tpls.js",
             "public/init.js",
             "public/*/*.js",
-            "public/*/{controllers,routes,services}/*.js"
+            "public/*/{controllers,routes,services}/*.js",
+            "//maps.googleapis.com/maps/api/js?sensor=false",
+            "public/system/lib/lodash/dist/lodash.underscore.js",
+            "public/system/lib/angular-google-maps/dist/angular-google-maps.js"
         ]
     }
 }
