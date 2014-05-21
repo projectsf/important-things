@@ -1,0 +1,19 @@
+<section data-ng-controller="EventsController" data-ng-init="find()">
+  <table class="things unstyled">
+    <thead>
+      <tr>
+        <td>Who</td>
+        <td>When</td>
+        <td>Where</td>
+        <td>What</td>
+    </thead>
+    <tbody>
+      <tr data-ng-repeat="event in events">
+        <td>{{event.thing}}</td>
+        <td>{{event.created}}</td>
+        <td>{ {{event.loc.lat}},{{event.loc.long}} }</td>
+        <td>{{event.name}}</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
