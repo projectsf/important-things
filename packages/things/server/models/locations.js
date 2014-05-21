@@ -20,15 +20,15 @@ var LocationSchema = new Schema({
         default: '',
         trim: true
     },
-    loc: {
-        lat: {
+    coords: {
+        longitude: {
             type: Number,
             default: '0'
         },
-        long: {
+        latitude: {
             type: Number,
             default: '0'
-        }
+        },
     },
 });
 

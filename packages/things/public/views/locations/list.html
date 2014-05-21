@@ -1,5 +1,7 @@
-<section data-ng-controller="LocationsController">
+<section data-ng-controller="LocationsController" data-ng-init="find()">
+  <ul class="things unstyled">
   <google-map center=map.center zoom=map.zoom>
-    <marker coords=marker.coords options=marker.options></marker>
+    <marker ng-repeat="l in locations" coords="l.coords">
+    </marker>
   </google-map>
 </section>
