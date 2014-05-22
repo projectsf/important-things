@@ -13,35 +13,28 @@ var mongoose = require('mongoose'),
 var EventSchema = new Schema({
     created: {
         type: Date,
-        default: Date.now
     },
-    thing: {
+    thingId: {
         type: String,
-        default: '',
-        trim: true
     },
-    loc: {
-        lat: {
-            type: Number,
-            default: '0'
+    coords: {
+        longitude: {
+            type: Number
         },
-        long: {
+        latitude: {
             type: Number,
-            default: '0'
         }
     },
     name: {
         type: String,
-        default: '',
-        trim: true
     }
 });
 
 /**
  * Validations
  */
-EventSchema.path('thing').validate(function(thing) {
-    return thing.length;
+EventSchema.path('thingId').validate(function(thingId) {
+    return thingId.length;
 }, 'Title cannot be blank');
 
 /**
