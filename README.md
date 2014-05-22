@@ -32,11 +32,8 @@ $ npm install -g grunt-cli
 * UI Bootstrap - Defined as bower module in the [bower.json](bower.json) file.
 
 ## Quick Install
-  The quickest way to get started with MEAN is to install the `meanio` package from NPM.
 
-  Install MEAN CLI:
-
-    $ git clone https://github.com/projectsf/important-things.gi
+    $ git clone https://github.com/projectsf/important-things.git
     $ cd important-things && npm install
     $ bower install angular-google-maps
 
