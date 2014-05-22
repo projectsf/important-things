@@ -36,8 +36,7 @@ $ npm install -g grunt-cli
 
   Install MEAN CLI:
 
-    $ [sudo] npm install -g meanio@latest
-    $ mean init important-things
+    $ git clone https://github.com/projectsf/important-things.gi
     $ cd important-things && npm install
     $ bower install angular-google-maps
 
