@@ -15,7 +15,7 @@ var LocationSchema = new Schema({
         type: Date,
         default: Date.now
     },
-    thing: {
+    thingId: {
         type: String,
         default: '',
         trim: true
@@ -35,8 +35,8 @@ var LocationSchema = new Schema({
 /**
  * Validations
  */
-LocationSchema.path('thing').validate(function(thing) {
-    return thing.length;
+LocationSchema.path('thingId').validate(function(thingId) {
+    return thingId.length;
 }, 'Thing cannot be blank');
 
 /**
